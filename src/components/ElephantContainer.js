@@ -7,10 +7,7 @@ class ElephantContainer extends Component {
     this.state = { babyElephant: false };
     this.handleClick = this.handleClick.bind(this);
   }
-
-  componentDidMount() {
-    alert('click on the Elephant!');
-  }
+  
 
   handleClick() {
     let nextBabyElephant = !this.state.babyElephant;

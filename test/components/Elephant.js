@@ -1,7 +1,4 @@
 import Elephant from 'components/Elephant';
-// import { mount } from 'enzyme';
-// import jasmineEnzyme from 'jasmine-enzyme';
-// import React from 'react';
 
 describe('Elephant', () => {
   let image,
@@ -10,12 +7,9 @@ describe('Elephant', () => {
       wrapper;
 
   beforeEach(() => {
-    // jasmineEnzyme();
-    onClick = jasmine.createSpy('onClick spy');
     wrapper = mount(
       <Elephant
         image="http://fakeurl.com/elephant"
-        onClick={onClick}
         text="I am an Elephant!"
       />
     );
@@ -35,10 +29,5 @@ describe('Elephant', () => {
       height: '400',
       width: '600'
     });
-  });
-
-  it('should invoke the onClick function from props when clicked', () => {
-    wrapper.simulate('click');
-    expect(onClick).toHaveBeenCalled();
   });
 });

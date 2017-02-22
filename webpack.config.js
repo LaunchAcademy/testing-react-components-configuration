@@ -19,14 +19,6 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel'
       },
-      {
-        test: /\.json$/,
-        include: [
-          /node_modules/,
-          path.resolve(__dirname, '..')
-        ],
-        loader: 'json-loader'
-      }
     ]
   },
   plugins: [
