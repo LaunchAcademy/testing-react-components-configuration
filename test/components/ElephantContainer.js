@@ -35,7 +35,9 @@ describe('ElephantContainer', () => {
 
 
   it('should render the tree of the Elephant component', () => {
-    expect(wrapper.find(Elephant).find('h1')).toBePresent();
+    let pageText = wrapper.text();
+
+    expect(pageText).toMatch('that\'s a big elephant');
   });
 
 });
