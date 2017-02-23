@@ -1,12 +1,11 @@
 import React from 'react';
 
 const Elephant = props => {
-  const { image, onClick, text } = props;
 
   return (
-    <div onClick={onClick} className="center">
-      <img src={image} height="400" width="600" />
-      <h1>{text}</h1>
+    <div onClick={props.onClick} className="center">
+      <img src={props.image} height="400" width="600" />
+      <h1>{props.text}</h1>
     </div>
   );
 };
