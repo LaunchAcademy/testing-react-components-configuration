@@ -1,4 +1,4 @@
-#Get Set Up
+# Get Set Up
 Run the following commands:
 
 ```sh
