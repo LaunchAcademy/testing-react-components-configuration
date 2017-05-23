@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Elephant from './Elephant';
+import Elephant from '../components/Elephant';
 
 class ElephantContainer extends Component {
   constructor(props) {
@@ -7,7 +7,7 @@ class ElephantContainer extends Component {
     this.state = { babyElephant: false };
     this.handleClick = this.handleClick.bind(this);
   }
-  
+
 
   handleClick() {
     let nextBabyElephant = !this.state.babyElephant;
