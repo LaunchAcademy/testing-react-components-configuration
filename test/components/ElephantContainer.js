@@ -1,5 +1,5 @@
-import ElephantContainer from 'components/ElephantContainer';
-import Elephant from 'components/Elephant';
+import ElephantContainer from '../../src/components/ElephantContainer';
+import Elephant from '../../src/components/Elephant';
 
 describe('ElephantContainer', () => {
   let wrapper;

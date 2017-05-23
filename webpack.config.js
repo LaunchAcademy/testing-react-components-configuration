@@ -5,19 +5,19 @@ module.exports = {
     path: './src/main.js'
   },
   output: {
-    path: './build',
+    path: '/build',
     filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
         test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
+        loaders: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel'
+        loader: 'babel-loader'
       },
     ]
   },

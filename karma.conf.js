@@ -36,13 +36,13 @@ module.exports = function(config) {
           {
             test: /\.jsx?$/,
             exclude: /node_modules/,
-            loader: 'babel'
+            loader: 'babel-loader'
           },
           // use isparta-loader for ES6 code coverage in the src folder
           {
             test: /\.jsx?$/,
             exclude: /(node_modules|test)/,
-            loader: 'isparta'
+            loader: 'isparta-loader'
           },
           {
             test: /\.json$/,
@@ -54,11 +54,6 @@ module.exports = function(config) {
           }
         ]
       },
-
-      // relative path starts out at the src folder when importing modules
-      resolve: {
-        root: path.resolve('./src')
-      }
     },
 
     webpackMiddleware: {

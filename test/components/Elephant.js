@@ -1,4 +1,4 @@
-import Elephant from 'components/Elephant';
+import Elephant from '../../src/components/Elephant';
 
 describe('Elephant', () => {
   let image,
